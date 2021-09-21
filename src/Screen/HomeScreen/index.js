@@ -11,6 +11,8 @@ const HomeScreen = () => {
     setstate(isEnabled ? 'dodgerblue' : 'white');
   };
   return (
+    
+
     <SafeAreaView style={{backgroundColor: state, flex: 1}}>
       <Text>HomeScreen</Text>
       <Button title="change color" onPress={() => setstate('yellow')} />
@@ -22,9 +24,24 @@ const HomeScreen = () => {
         value={isEnabled}
       />
     </SafeAreaView>
+    
   );
 };
 
 export default HomeScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+header:{
+width:'100%',
+height:'100%',
+flexDirection:'row',
+alignItems:'center',
+justifyContent:'center'
+
+},
+headertText:{
+  fontWeight:'bold'
+
+}
+
+});
